@@ -24,7 +24,7 @@ body{
     display: block;
     background-repeat: repeat-x;
     bottom: 0px;
-    animation: moveRight 2s linear infinite;
+    animation: moveRight 6s linear infinite;
 
 }
 .car {
@@ -34,11 +34,24 @@ body{
     position: absolute;
     bottom: 40px;
     left: 200px;
+    animation: suspension .6s ease-in-out infinite;
 }
 
 @keyframes moveRight{
     100%{
         transform: translateX(-2950px);
     }
+    
 
+}
+@keyframes suspension{
+    50%{
+        transform: translateY(3px);
+    }
+    0%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
 }
